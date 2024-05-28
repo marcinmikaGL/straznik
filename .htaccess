@@ -1,0 +1,4 @@
+AddType audio/mpeg mp3
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/index\.php
+RewriteRule ^(.*)$ index.php?url=$1 [L]
